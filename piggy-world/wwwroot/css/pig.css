@@ -1,0 +1,138 @@
+﻿* {
+    box-sizing: border-box;
+}
+
+.pig-portrait {
+    padding: 7rem;
+    border: 2px solid black;
+    display: inline-block;
+    background-color: lightblue;
+    z-index: -2;
+    position: relative;
+}
+
+.pig {
+    background-color: pink;
+    width: 14rem;
+    height: 14rem;
+    border-radius: 50%;
+    display: flex;
+    position: relative;
+}
+
+.hat {
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    top: -22%;
+}
+
+.hatbase {
+    width: 20%;
+    height: 20%;
+    background: blue;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.decoration {
+    margin-bottom: -5%;
+    background: white;
+    height: 10%;
+    width: 10%;
+    left: 0;
+    border-radius: 50%;
+    border: 1px solid black;
+    z-index: 2;
+}
+
+.eyes {
+    position: absolute;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 10%;
+    top: 30%;
+    left: 0;
+    right: 0;
+}
+
+.eye {
+    background-color: black;
+    width: 10%;
+    height: 100%;
+    top: 30%;
+    border-radius: 50%;
+}
+
+.ears {
+    position: absolute;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 50%;
+    top: 0%;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.ear {
+    height: 100%;
+    width: 40%;
+    background: pink;
+}
+
+    .ear.left {
+        rotate: 10deg;
+    }
+
+    .ear.right {
+        rotate: -10deg;
+    }
+
+
+.nose {
+    position: absolute;
+    background-color: magenta;
+    border-radius: 50%;
+    width: 40%;
+    height: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    top: 50%;
+}
+
+.smile {
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    border-top-left-radius: 100px;
+    border-top-right-radius: 100px;
+    border: 0.1rem solid black;
+    border-bottom: 0.1rem solid black;
+    background: white;
+    rotate: 180deg;
+    top: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+    .smile.lips {
+        background: inherit;
+        border-bottom: 0px;
+    }
